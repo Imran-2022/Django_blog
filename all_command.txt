@@ -1,3 +1,4 @@
 1. py manage.py startproject project-name
 2. py manage.py startapp app-name 
 3. py manage.py runserver (to run server)
+4. py manage.py make

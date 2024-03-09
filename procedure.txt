@@ -1,4 +1,25 @@
 - at first create a django project and related apps!!! as working with app is easy !!
+
 - link up apps in settings.py. 
+
 - add different urls for different apps. 
+
+- creating model relationships 
+
+- (CharField add krle max_length must dte hbe)
+
+- autor jdi tr profile delete kre thle post thakbe ki na ? 
+
+[hte pre - 1. all blog dlt hye jbe.(on_delete=models.CASCADE) 2. thakbe]
+
+- ekjn autor ar shdo ektai prfle thke prbe. (one to one)
+
+- model create kre ta admin panel k janite hbe !! (admin.py a register krte hbe)
+
+- each class db te table toire kre. 
+
+- make migrations and migrates
+
+- before make migration and migrate , project should work fine.
+
 - 
