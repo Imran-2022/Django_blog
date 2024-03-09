@@ -61,4 +61,14 @@ def add_category(request):
     return render(request, 'add_category.html',{'form':profile_form})
 
 
+- #Showing post to frontend
+
+- add url name in base.html for routing perpose 
+
+- many to many relation thakle loop dea access jra jabe na , like category. 
+
+- in views.js -> .all() , but in html loop, -> without all can access ! 
+
 - 
+
+-
