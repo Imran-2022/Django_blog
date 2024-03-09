@@ -29,4 +29,14 @@
     
 - add this in model so that table named it 
 
-- 
+- #working with basic html and forms 
+
+- tamplate -> base.html -> 
+
+- global template k settings.py a jainte hbe . 
+
+-  #working with base html and forms . 
+
+- html block container and inherit base form form outer templates
+
+- create form for add_author.html...
