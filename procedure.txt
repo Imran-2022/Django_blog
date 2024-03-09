@@ -45,6 +45,8 @@
 
 - # Author and Profile Form
 
--
+- magic of one to one field !! ( Profile_with_this_author_already_exists_)
+
+- 
 
 -
