@@ -2,3 +2,7 @@
 2. py manage.py startapp app-name 
 3. py manage.py runserver (to run server)
 4. py manage.py make
+5. py manage.py createsuperuser (imran)
+6. py manage.py makemigrations profile (to modify any model later)
+7. py manage.py migrate profile
+8. 

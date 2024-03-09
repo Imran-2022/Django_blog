@@ -22,4 +22,11 @@
 
 - before make migration and migrate , project should work fine.
 
+- create superuser for django admin
+
+"    def __str__(self):
+        return self.name " 
+    
+- add this in model so that table named it 
+
 - 

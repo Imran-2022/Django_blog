@@ -14,3 +14,6 @@ class Post(models.Model):
     
     # one to many relationship
 
+    def __str__(self):
+        return f'{self.title} by {self.author}'
+    
