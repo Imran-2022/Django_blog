@@ -69,6 +69,24 @@ def add_category(request):
 
 - in views.js -> .all() , but in html loop, -> without all can access ! 
 
-- 
+- #Edit Post
+
+- priamry key use kre !! 
+
+- all post theke , ami jai pst edit krte cy sta filter krre ante hbe.
+
+- instance within request !!
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
 
 -
