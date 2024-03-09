@@ -47,6 +47,18 @@
 
 - magic of one to one field !! ( Profile_with_this_author_already_exists_)
 
-- 
+- #Creating Category and Post
 
--
+
+def add_category(request):
+    if request.method=='POST': # user post request koreche
+        profile_form=forms.CategoryForm(request.POST) # user er post request data ekhane capture krlm.
+        if profile_form.is_valid(): #post kra dt valid kina check .!
+            profile_form.save() # jdi valid hy. database a save krbo
+            return redirect('add_category') 
+    else: # user normally website a gle blank form pbe !!! 
+        profile_form=forms.CategoryForm()
+    return render(request, 'add_category.html',{'form':profile_form})
+
+
+- 
