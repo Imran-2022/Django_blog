@@ -40,3 +40,11 @@
 - html block container and inherit base form form outer templates
 
 - create form for add_author.html...
+
+- add crspy form  for make better design !! 
+
+-
+
+-
+
+-
