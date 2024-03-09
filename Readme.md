@@ -1,0 +1,1 @@
+### Django blog project crud practice !!

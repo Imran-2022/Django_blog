@@ -1,0 +1,4 @@
+- at first create a django project and related apps!!! as working with app is easy !!
+- link up apps in settings.py. 
+- add different urls for different apps. 
+- 
