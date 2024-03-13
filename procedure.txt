@@ -91,7 +91,9 @@ that's it .
 
 -
 
--
+- [13-march-24]
+
+- Djano blog part 2 [Module 18 : Simple blog project part 2]
 
 -
 
