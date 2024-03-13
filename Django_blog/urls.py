@@ -7,7 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='homepage'),
     path('author/',include('author.urls')),
-    path('profile/',include('profille.urls')),
     path('post/',include('posts.urls')),
     path('category/',include('categories.urls')),
 ]

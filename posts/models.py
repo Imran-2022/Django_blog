@@ -1,6 +1,7 @@
 from django.db import models
 from categories.models import Category
-from author.models import Author
+from django.contrib.auth.models import User
+
 # Create your models here.
 
 class Post(models.Model):
@@ -10,7 +11,7 @@ class Post(models.Model):
 
     # ekta post multiple categorir moddhe thakte pre, abr ekta categorire moddhe multiple post thakte pre . 
 
-    author= models.ForeignKey(Author, on_delete=models.CASCADE)
+    author= models.ForeignKey(User, on_delete=models.CASCADE)
     
     # one to many relationship
 

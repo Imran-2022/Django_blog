@@ -1,12 +1,23 @@
 from   django import forms
-from . models import Author
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
 
-class AuthorForm(forms.ModelForm):
-    class Meta:
-        model = Author
-        fields='__all__'
+
+# class AuthorForm(forms.ModelForm):
+#     class Meta:
+#         model = Author
+#         fields='__all__'
         # sb field nea ekta form create kre dbe...
         # exclude= []
         # fields=['name','abc]
 
         
+class RegistrationForm(UserCreationForm):
+    first_name=forms.CharField(widget=forms.TextInput(attrs={'id':'required'}))
+    first_name=forms.CharField(widget=forms.TextInput(attrs={'id':'required'}))
+
+    # baki field gula autometicaly required thake ! 
+    class Meta:
+        model=User
+        fields=['username','first_name','last_name','email']
+
