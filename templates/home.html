@@ -11,7 +11,7 @@
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text">{{ post.content }}</p>
                         {% comment %} <p>{{post.category}}</p> {% endcomment %}
-                        <small>author :  {{post.author.name}}</small>
+                        <small>author :  {{post.author}}</small>
                         <ul class="list-unstyled d-flex gap-2 flex-wrap">
                             <strong>Category:</strong>
                             {% for category in post.category.all %}

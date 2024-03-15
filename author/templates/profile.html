@@ -2,13 +2,11 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<form action="" method="POST" class="w-50 m-auto my-5">
+<div>
     <h1>Profile page</h1>
-    <a class="btn btn-sm btn-warning" href="{% url 'pass_change' %}">Change your password !</a>
-    {% csrf_token %}
-    {{form|crispy}}
 
-    <input class="btn btn-primary d-block w-100" type="submit" value="Submit">
-</form>
+    <a href="{% url 'edit_profile'%}" class="btn btn-sm btn-primary">Edit your profile</a>
+
+</div>
 
 {% endblock %}

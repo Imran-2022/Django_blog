@@ -105,6 +105,6 @@ that's it .
 
 - follow above link to make the page login required !
 
-- 
+- password change form in django[https://gist.github.com/vitorfs/1d538f6b27891055de2ca25a05e04bb1]
 
 - 

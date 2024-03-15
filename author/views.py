@@ -40,6 +40,10 @@ def user_login(request):
 
 @login_required
 def profile(request):
+    return render(request, 'profile.html')
+
+@login_required
+def edit_profile(request):
     if request.method=='POST':
         profile_form=forms.ChangeUserData(request.POST,instance=request.user)
         if profile_form.is_valid():
@@ -48,7 +52,9 @@ def profile(request):
             return redirect('profile') #here add_author url name , love it
     else:
         profile_form=forms.ChangeUserData(instance=request.user)
-    return render(request, './profile.html',{'form':profile_form})
+    return render(request, './update_profile.html',{'form':profile_form})
+
+
 
 
 def pass_change(request):
@@ -63,3 +69,4 @@ def pass_change(request):
     else:
         form=PasswordChangeForm(user=request.user)
     return render(request, 'pass_change.html',{'form':form})
+

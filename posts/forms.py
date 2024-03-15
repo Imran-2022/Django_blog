@@ -5,6 +5,8 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields='__all__'
+        exclude=['author']
+        
         # sb field nea ekta form create kre dbe...
         # exclude= []
         # fields=['name','abc]
