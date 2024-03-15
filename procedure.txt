@@ -95,10 +95,14 @@ that's it .
 
 - Djano blog part 2 [Module 18 : Simple blog project part 2]
 
--
+- [15-march-24 continue from login_paget_part1]
 
--
+- se jdi login na thake tokhoni kbl login krte prbe.
 
--
+- if after making some changes , migrate not working, remove sqlite and again repeat migration,migrate and create super use , it may work .
 
--
+- 
+
+- 
+
+- 
