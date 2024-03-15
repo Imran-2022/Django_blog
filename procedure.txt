@@ -109,9 +109,13 @@ that's it .
 
 - Edit Post and Logout
 
--
+- Prepopulated Field [ Slug-field in django ]
 
--
+- keep it in mind that, jkhn ekta model create kra hye gache, and database a roye gache, sai time a jdi dai model ty new kichu add krte chai, should add [ null=True,blnk=True ]
+
+- thn, make migration,migrate !! 
+
+- 
 
 -
 
