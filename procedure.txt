@@ -101,7 +101,9 @@ that's it .
 
 - if after making some changes , migrate not working, remove sqlite and again repeat migration,migrate and create super use , it may work .
 
-- 
+- [https://studygyaan.com/django/how-to-restrict-access-with-django-login-required-decorator-function]
+
+- follow above link to make the page login required !
 
 - 
 
