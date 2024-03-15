@@ -7,6 +7,34 @@
 
     <a href="{% url 'edit_profile'%}" class="btn btn-sm btn-primary">Edit your profile</a>
 
+    <div class="container">
+        <div class="row">
+            {% for post in data %}
+                <div class="col-md-3 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.content }}</p>
+                            {% comment %} <p>{{post.category}}</p> {% endcomment %}
+                            <small>author :  {{post.author}}</small>
+                            <ul class="list-unstyled d-flex gap-2 flex-wrap">
+                                <strong>Category:</strong>
+                                {% for category in post.category.all %}
+                                    <button class="btn btn-outline-primary btn-sm disabled" style="padding: 0.25rem 0.5rem; font-size: 0.7rem;">{{ category.name }}</button>
+                                {% endfor %}
+                            </ul> 
+                            <div class="d-flex gap-2">
+                                <a href="{% url 'edit_post' post.id %}"><button class="btn btn-danger btn-sm " style="padding: 0.25rem 0.5rem; font-size: 0.7rem;">Edit</button></a>
+                                <a href="{% url 'delete_post' post.id %}"><button class="btn btn-danger btn-sm " style="padding: 0.25rem 0.5rem; font-size: 0.7rem;">Delete</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            {% endfor %}
+        </div>
+    </div>
+
 </div>
 
 {% endblock %}

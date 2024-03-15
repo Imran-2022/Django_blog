@@ -107,4 +107,20 @@ that's it .
 
 - password change form in django[https://gist.github.com/vitorfs/1d538f6b27891055de2ca25a05e04bb1]
 
-- 
+- Edit Post and Logout
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
