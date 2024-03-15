@@ -3,8 +3,7 @@
 {% block content %}
 
 <form action="" method="POST" class="w-50 m-auto my-5">
-    <h1>Profile page</h1>
-    <a class="btn btn-sm btn-warning" href="{% url 'pass_change' %}">Change your password !</a>
+    <h1>Change your Password from here</h1>
     {% csrf_token %}
     {{form|crispy}}
 
