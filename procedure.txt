@@ -115,7 +115,11 @@ that's it .
 
 - thn, make migration,migrate !! 
 
-- 
+- Filtering Posts By Category
+
+- initially slug none , as kau jdi kno product select na kre than auto all product show krbe . 
+
+-
 
 -
 
