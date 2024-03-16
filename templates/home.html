@@ -1,47 +1,65 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
-<div class="d-flex flex-warp">
-    <div class='col-2'>
-        {%for cat in category%}
 
-        <div class="form-check">
-            <label class="form-check-label" for={{cat.id}}>
-                <a href="{% url 'category_wise_post' cat.slug %}">{{cat.name}}</a>
-              </label>
-            <input class="form-check-input" type="radio" value={{cat}} name="category" id={{cat.id}}>
-          </div>
-
-          {% endfor %}
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-center" style="height: 400px;">
+            <div class="text-center">
+                <h1 class="display-4">Welcome to Django Blog</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eum dolores, similique libero officia sint odit corporis nostrum, facilis et atque dignissimos totam tenetur explicabo rem recusandae optio voluptatum? Atque!</p>
+            </div>
+        </div>
+        <div class="col-md-6" style="height: 400px;">
+            <img class="img-fluid h-100" src="{% static 'image.jpg' %}" alt="Image">
+        </div>
     </div>
-    <div class='col-10'>
-        <div class="container">
-            <h1>{{data|length}}</h1>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="mb-4">
+                <h5>Categories</h5>
+                <hr>
+                {% for cat in category %}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="{{ cat }}" name="category" id="{{ cat.id }}">
+                    <label class="form-check-label" for="{{ cat.id }}">
+                        <a href="{% url 'category_wise_post' cat.slug %}">{{ cat.name }}</a>
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h1>{{ data|length }}</h1>
             <div class="row">
                 {% for post in data %}
-                    <div class="col-md-3 mb-3">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ post.title }}</h5>
-                                <p class="card-text">{{ post.content }}</p>
-                                {% comment %} <p>{{post.category}}</p> {% endcomment %}
-                                <small>author :  {{post.author}}</small>
-                                <ul class="list-unstyled d-flex gap-2 flex-wrap">
-                                    <strong>Category:</strong>
-                                    {% for category in post.category.all %}
-                                        <button class="btn btn-outline-primary btn-sm disabled" style="padding: 0.25rem 0.5rem; font-size: 0.7rem;">{{ category.name }}</button>
-                                    {% endfor %}
-                                </ul> 
-                            </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.content }}</p>
+                            <small>Author: {{ post.author }}</small>
+                            <ul class="list-unstyled mt-3">
+                                <strong>Categories:</strong>
+                                {% for category in post.category.all %}
+                                <li class="d-inline-block me-2">
+                                    <button class="btn btn-outline-primary btn-sm disabled">{{ category.name }}</button>
+                                </li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
-        
+                </div>
                 {% endfor %}
             </div>
         </div>
     </div>
 </div>
+
 
 {% endblock %}
